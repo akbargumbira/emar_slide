@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Slide - QGIS Resource Sharing</title>
+		<title>Slide - Trolley Problem</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/blood.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -25,127 +25,52 @@
 		<div class="reveal">
 			<div class="slides">
 				<!-- Slide 1-->
-				<section data-background="#3cba54">
-					<h2>QGIS Resource Sharing</h2>
-					<h4>Google Summer of Code 2016</h4>
+				<section >
+					<h2>Trolley Problem</h2>
+					<h4>Methodology and Ethical Aspects of Research</h4>
 					<small>
-						Akbar Gumbira (student), Alessandro Pasotti (mentor), Anita
-						Graser (mentor) with the help of Richard Duivenvoorde, Tim
-						Sutton, and QGIS community.
+						Akbar Gumbira, Eugene Minin
 					</small>
 				</section>
 
 				<!--Slide 2-->
-				<section data-background="#b5533c">
-					<section id="problem1">
-						<h3>Problem</h3>
-						Have you ever found yourself needed to share QGIS resources?
-							<p class="fragment">..you know stuffs like SVG</p>
-							<p class="fragment">..symbols or colorramps</p>
-							<p class="fragment">..styles</p>
-							<p class="fragment">..processing scripts</p>
-							<p class="fragment">..or composer templates?</p>
+				<section>
+					<section id="introduction">
+						<h3>Introduction</h3>
+						 <img data-src="img/trolley.jpg">
 					</section>
 				</section>
 
 				<!--Slide 3-->
-				<section data-background="#b5533c">
-					<section id="problem2">
-						<h3>Problem</h3>
-						<p class="fragment">But it's too dark for your friends to put
-							those resources in the right place</p>
-						<p class="fragment">..or that you wish you can search available
-							resources out there somewhere just from your QGIS</p>
+				<section>
+					<section id="analysis">
+						<h3>The Doctrine of Double Effect</h3>
+						<h4>Thomas Aquinas</h4>
+							<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						"Invoked to explain the permissibility of an action that
+								causes a serious harm, such as the death of a human being, as a side effect of promoting some good end"
+					</blockquote>
 					</section>
 				</section>
-
-					<section data-background="img/idea.gif">
-						<h3>so we had an idea...</h3>
-					</section>
 
 				<!--Slide 4-->
-				<section data-background="#db3236">
-					<section id="solution">
-						Why don't we make something similar to our successful plugin manager?
-						<p class="fragment">...where users can make their own
-							resource repository</p>
-						<p class="fragment">...and that other users can browse and install
-							collections available in that repository</p>
-					</section>
+				<section>
+						Do we have innate moral grammar?
 				</section>
 
-				<section data-background="#db3236">
-					And that it needs to have a distributed repository system...
+				<section>
+						Neuroscience
 				</section>
 
-				<section data-background="img/why.gif">
-					<h2>But...</h2>
+				<section>
+					Impact in real life?
 				</section>
 
-				<section data-background="#db3236">
-						Because then we can do cool stuffs
-						<p class="fragment">Put it on git platform, fork repositories
-						and custom the resources as we want</p>
-						<p class="fragment">Put the repository on ftp, scp, or other
-							protocols (though these are not implemented yet :p)</p>
-				</section>
-
-				<section data-background="img/code.gif">
-					<h2>We started to code..</h2>
-				</section>
-
-				<!--Slide 5-->
-				<section data-background="img/plugin.png">
-					<p style="color: #4885ed">And a new QGIS plugin is implemented (yay)</p>
-				</section>
 
 				<!--Adding Repository-->
-				<section data-background="#4885ed">
-					<p>Where users can add repository..</p>
-					<iframe width="800" height="600" src="https://www.youtube.com/embed/DxE_PONFsjY" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section data-background="#4885ed">
-					<p>Browse and filter collections..</p>
-					<iframe width="800" height="600" src="https://www.youtube.com/embed/B614CXfwZe0" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section data-background="#4885ed">
-					<p>And install collections..</p>
-					<iframe width="800" height="600" src="https://www.youtube.com/embed/77fglr3C2TU" frameborder="0"	allowfullscreen></iframe>
-				</section>
-
-				<section data-background="img/improve.gif">
-					<h3>But there is always something to fix and improve..</h3>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h3>Room for Improvement</h3>
-					<ul>
-						<li>Better 'Help' system (now only linking to online
-							documentation)</li>
-						<li>Translation</li>
-						<li>More unittests</li>
-						<li>Collection versioning</li>
-						<li>More resource handler: composer (qpt), project file (.qgs)</li>
-						<li>Feature to create repository, metadata, and manage the
-							collections</li>
-					</ul>
-				</section>
-
-
-				<section data-background="#4d7e65">
-					<h3>More about this project</h3>
-					<ul>
-						<li><a href="http://www.akbargumbira.com/slide_gsoc2016/">This slide</a></li>
-						<li><a href="http://www.akbargumbira.com/qgis_resources_sharing/">Plugin Documentation</a></li>
-						<li><a href="https://github.com/akbargumbira/qgis_resources_sharing">Plugin VCS</a></li>
-						<li><a href="https://github.com/akbargumbira/qgis_resources_data">Test Repository</a></li>
-					</ul>
-				</section>
-
-				<section data-background="img/summerover.gif">
-					<h3>End of Slide and Summer..</h3>
+				<section>
+					<p>Another approach?</p>
+					<iframe width="800" height="600" src="https://www.youtube.com/watch?v=-N_RZJUAQY4" frameborder="0" allowfullscreen></iframe>
 				</section>
 
 			</div>
