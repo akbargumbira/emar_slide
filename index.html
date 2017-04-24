@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Slide - QGIS Resource Sharing</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Slide 1-->
+				<section data-background="#3cba54">
+					<h2>QGIS Resource Sharing</h2>
+					<h4>Google Summer of Code 2016</h4>
+					<small>
+						Akbar Gumbira (student), Alessandro Pasotti (mentor), Anita
+						Graser (mentor) with the help of Richard Duivenvoorde, Tim
+						Sutton, and QGIS community.
+					</small>
+				</section>
+
+				<!--Slide 2-->
+				<section data-background="#b5533c">
+					<section id="problem1">
+						<h3>Problem</h3>
+						Have you ever found yourself needed to share QGIS resources?
+							<p class="fragment">..you know stuffs like SVG</p>
+							<p class="fragment">..symbols or colorramps</p>
+							<p class="fragment">..styles</p>
+							<p class="fragment">..processing scripts</p>
+							<p class="fragment">..or composer templates?</p>
+					</section>
+				</section>
+
+				<!--Slide 3-->
+				<section data-background="#b5533c">
+					<section id="problem2">
+						<h3>Problem</h3>
+						<p class="fragment">But it's too dark for your friends to put
+							those resources in the right place</p>
+						<p class="fragment">..or that you wish you can search available
+							resources out there somewhere just from your QGIS</p>
+					</section>
+				</section>
+
+					<section data-background="img/idea.gif">
+						<h3>so we had an idea...</h3>
+					</section>
+
+				<!--Slide 4-->
+				<section data-background="#db3236">
+					<section id="solution">
+						Why don't we make something similar to our successful plugin manager?
+						<p class="fragment">...where users can make their own
+							resource repository</p>
+						<p class="fragment">...and that other users can browse and install
+							collections available in that repository</p>
+					</section>
+				</section>
+
+				<section data-background="#db3236">
+					And that it needs to have a distributed repository system...
+				</section>
+
+				<section data-background="img/why.gif">
+					<h2>But...</h2>
+				</section>
+
+				<section data-background="#db3236">
+						Because then we can do cool stuffs
+						<p class="fragment">Put it on git platform, fork repositories
+						and custom the resources as we want</p>
+						<p class="fragment">Put the repository on ftp, scp, or other
+							protocols (though these are not implemented yet :p)</p>
+				</section>
+
+				<section data-background="img/code.gif">
+					<h2>We started to code..</h2>
+				</section>
+
+				<!--Slide 5-->
+				<section data-background="img/plugin.png">
+					<p style="color: #4885ed">And a new QGIS plugin is implemented (yay)</p>
+				</section>
+
+				<!--Adding Repository-->
+				<section data-background="#4885ed">
+					<p>Where users can add repository..</p>
+					<iframe width="800" height="600" src="https://www.youtube.com/embed/DxE_PONFsjY" frameborder="0" allowfullscreen></iframe>
+				</section>
+
+				<section data-background="#4885ed">
+					<p>Browse and filter collections..</p>
+					<iframe width="800" height="600" src="https://www.youtube.com/embed/B614CXfwZe0" frameborder="0" allowfullscreen></iframe>
+				</section>
+
+				<section data-background="#4885ed">
+					<p>And install collections..</p>
+					<iframe width="800" height="600" src="https://www.youtube.com/embed/77fglr3C2TU" frameborder="0"	allowfullscreen></iframe>
+				</section>
+
+				<section data-background="img/improve.gif">
+					<h3>But there is always something to fix and improve..</h3>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h3>Room for Improvement</h3>
+					<ul>
+						<li>Better 'Help' system (now only linking to online
+							documentation)</li>
+						<li>Translation</li>
+						<li>More unittests</li>
+						<li>Collection versioning</li>
+						<li>More resource handler: composer (qpt), project file (.qgs)</li>
+						<li>Feature to create repository, metadata, and manage the
+							collections</li>
+					</ul>
+				</section>
+
+
+				<section data-background="#4d7e65">
+					<h3>More about this project</h3>
+					<ul>
+						<li><a href="http://www.akbargumbira.com/slide_gsoc2016/">This slide</a></li>
+						<li><a href="http://www.akbargumbira.com/qgis_resources_sharing/">Plugin Documentation</a></li>
+						<li><a href="https://github.com/akbargumbira/qgis_resources_sharing">Plugin VCS</a></li>
+						<li><a href="https://github.com/akbargumbira/qgis_resources_data">Test Repository</a></li>
+					</ul>
+				</section>
+
+				<section data-background="img/summerover.gif">
+					<h3>End of Slide and Summer..</h3>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				backgroundTransition: 'zoom',
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-65219695-4', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>
